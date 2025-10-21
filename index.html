@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile Card</title>
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-card__header">
+        <div class="avatar-col">
+          <figure class="avatar">
+            <img data-testid="test-user-avatar"
+            id="avatar-img"
+            src="https://i.ibb.co/rfK0VSRn/passport.jpg"
+            alt="User avatar"
+            />
+          </figure>
+        </div>
+
+        <div class="profile-card__header-content">
+          <h2 class="user-name" data-testid="test-user-name">Joshua Emmanuel</h2>
+
+          <div> 
+            <p id="user-time" class="user-time" data-testid="test-user-time"></p>
+          </div>
+
+          <nav class="social-links" data-testid="test-user-social-links">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/joshua-emmanuel/" target="_blank"  rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/joshua-emmanuel/" target="_blank"  rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section class="bio">
+        <p data-testid="test-user-bio">A frontend developer passionate about building clean, user-friendly web applications</p>
+      </section>
+
+      <section class="hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Designing</li>
+          <li>Reading</li>
+        </ul>
+      </section>
+
+      <section class="dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Lying</li>
+          <li>Alcohol</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

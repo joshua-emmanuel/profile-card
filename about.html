@@ -3,9 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <link rel="stylesheet" href="about.css">
+  <title>About Us </title>
 </head>
 <body>
-  <main></main>
+  <main data-testid="test-about-page">
+    <section class="navigation">
+      <nav class="nav-links">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="current" href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="about-me">
+      <h2>About Me</h2>
+
+      <section class="bio" data-testid="test-about-bio">
+        <h3>Bio</h3>
+        <p>A frontend developer passionate about building clean, user-friendly web applications.</p>
+      </section>
+
+      <section class="goals" data-testid="test-about-goals">
+        <h3>Goals in this program</h3>
+        <ul>
+          <li>To find out gaps in my skill.</li>
+          <li>To become an industry ready frontend developer.</li>
+        </ul>
+      </section>
+      
+      <section class="low-confidence" data-testid="test-about-confidence">
+        <h3>Areas of low confidence</h3>
+        <ul>
+          <li>Typescript.</li>
+          <li>Testing.</li>
+          <li>Networking skills.</li>
+        </ul>
+      </section>
+
+      <section class="future-note" data-testid="test-about-future-note">
+        <h3>Note to future self</h3>
+        <p>Stay consistent and enjoy the journey!</p>
+      </section>
+
+      <section class="extra-thoughts" data-testid="test-about-extra">
+        <h3>Extra thoughts</h3>
+        <p>There's no perfect time. There's just now.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="contact.js"></script>
 </body>
 </html>

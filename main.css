@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.navigation {
+  margin-block: 2rem;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1864ab;
+  background-color: #e5f4ff;
+}
+
+.nav-links a.current {
+  color: white;
+  background-color: #1864ab;
+}
+
+.nav-links a:hover {
+  color: #1864ab;
+  background-color: #a5d8ff;
+  transition: all 0.2s;
+}

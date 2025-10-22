@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us </title>
+</head>
+<body>
+  <main>
+    <section class="navigation">
+      <nav class="nav-links">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="current" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <form id="contact-form" class="contact-form">
+      <h2>Contact Us</h2>
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" aria-describedby="name-error" data-testid="test-contact-name" required>
+        <p id="name-error" class="error-message" data-testid="test-contact-error-name"></p>
+      </div>
+      
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" aria-describedby="email-error" data-testid="test-contact-email" required>
+        <p id="email-error" class="error-message" data-testid="test-contact-error-email"></p>
+      </div>
+      
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" aria-describedby="subject-error" data-testid="test-contact-subject" required>
+        <p id="subject-error" class="error-message" data-testid="test-contact-error-subject"></p>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" aria-describedby="message-error" data-testid="test-contact-message" required></textarea>
+        <p id="message-error" class="error-message" data-testid="test-contact-error-message"></p>
+      </div>
+
+      <div>
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+      </div>
+
+      <div class="hidden">
+        <p class="success-message" data-testid="test-contact-success"></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>
